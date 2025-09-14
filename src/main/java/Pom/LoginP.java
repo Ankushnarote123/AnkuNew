@@ -10,25 +10,25 @@ import Base_components.BaseClass;
 
 public class LoginP extends BaseClass {
 
-	    WebDriver driver;
+	    private WebDriver driver;
 	    
-	    public void LoginPage(WebDriver driver) {
-	        this.driver = driver;
-	    }
-
-	   // @FindBy(id = "user-name")
-		//WebElement userName;
-	    
+	   
+	   
 	    private By userName = By.id("user-name");
 	    private By passwordF = By.id("password");
 	    private By loginButton = By.id("login-button");
 
 	  
 
-	    public void login(String username, String password) throws InterruptedException {
-	        Thread.sleep(5000);
+	   
+
+		
+
+
+
+		public void login(String username, String password){
 	    	driver.findElement((By) userName).sendKeys(username);
-	    	 Thread.sleep(5000);
+	    	 
 	        driver.findElement(passwordF).sendKeys(password);
 	        driver.findElement(loginButton).click();
 	    }

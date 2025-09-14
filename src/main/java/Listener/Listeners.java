@@ -1,5 +1,6 @@
 package Listener;
 
+import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
@@ -11,9 +12,9 @@ import com.aventstack.extentreports.Status;
 import org.testng.ITestContext;
 import utils.Screenshots;
 
-
 public class Listeners extends BaseClass implements ITestListener
 {
+	 private static ExtentReports extent = ExtentManager.getInstance();
 	 private static ThreadLocal<ExtentTest> testReport = new ThreadLocal<>();
 
 	    @Override

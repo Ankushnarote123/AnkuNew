@@ -22,7 +22,7 @@ public class test extends BaseClass
 	    @Test
 	    public void loginAndAddItemsTest() throws InterruptedException {
 
-	        LoginP loginP = new LoginP();
+	        LoginP loginP = new LoginP(driver);
 	        HomeP homeP = new HomeP(driver);
 	        
 
